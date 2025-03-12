@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
+import {RouterOutlet} from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  imports: [],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    
-  `,
-  styles: [],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    imports: [
+        RouterOutlet
+    ],
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'computer-science-map';
 }
